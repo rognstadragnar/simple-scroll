@@ -58,7 +58,6 @@ function scrollFunc(amount, duration = 100, minSpeed = 3, maxSpeed = 15) {
         if (amount / duration <= minSpeed) {speed = minSpeed;}
         else if (amount / duration >= maxSpeed){speed = maxSpeed}
         else {speed = amount / duration;}
-        console.log(speed, duration)
         const scrolling = setInterval(() => {
             let currentPos = window.scrollY;
             if (window.scrollY < goal && document.body.scrollHeight - window.innerHeight !== window.scrollY) {
