@@ -80,7 +80,7 @@ function scrollFunc(amount, duration = 100, minSpeed = 3, maxSpeed = 15) {
             } else {
                 clearInterval(scrolling)
             }
-        })
+        }, 5)
     }
 }
 

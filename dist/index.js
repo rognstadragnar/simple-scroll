@@ -97,7 +97,6 @@ function scrollFunc(amount) {
             } else {
                 speed = amount / duration;
             }
-            console.log(speed, duration);
             var scrolling = setInterval(function () {
                 var currentPos = window.scrollY;
                 if (window.scrollY < goal && document.body.scrollHeight - window.innerHeight !== window.scrollY) {
@@ -106,7 +105,7 @@ function scrollFunc(amount) {
                 } else {
                     clearInterval(scrolling);
                 }
-            });
+            }, 5);
         })();
     } else if (amount < 0) {
         (function () {
