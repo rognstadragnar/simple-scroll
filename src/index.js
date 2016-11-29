@@ -66,7 +66,7 @@ function scrollFunc(amount, duration = 100, minSpeed = 3, maxSpeed = 15) {
             } else {
                 clearInterval(scrolling)
             }
-        })
+        }, 5)
     } else if (amount < 0) {
         if (amount / duration >= -minSpeed) {speed = -minSpeed;}
         else if (amount / duration <= -maxSpeed){speed = -maxSpeed}
